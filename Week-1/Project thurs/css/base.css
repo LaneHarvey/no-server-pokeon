@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:700';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url('http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg') no-repeat center;
+  background-size: cover;
+  height:65vh;
+}
+.main-header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+.text-body {
+  background: #d3d3d3;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif, serif;
+  color: gray;
+  font-size: 28px;
+  line-height: 7.5vh;
+  padding-top: 40px;
+}
+.header-bottom {
+  height: 300px;
+  width: 320px;;
+  align-items: center;
+  justify-content: center;
+}
+.text-body img {
+  width: 125px;
+  height: auto;
+}
+.text-body em {
+  font-size: 35px;
+}
+.text-body em1 {
+  font-size: 50px;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px
+}
