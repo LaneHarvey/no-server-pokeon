@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeFinder">
+<head>
+    <title>Pokemon</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Pokemon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/base/reset.css">
+
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+
+    <link rel="stylesheet" href="styles/views/main.css">
+    <link rel="stylesheet" href="styles/views/about.css">
+    <link rel="stylesheet" href="styles/views/adventurers.css">
+    <link rel="stylesheet" href="styles/views/locations.css">
+    <link rel="stylesheet" href="styles/views/packages.css">
+    <link rel="stylesheet" href="styles/views/contact.css">
+    <link rel="stylesheet" href="styles/views/caught.css">
+
+</head>
+
+<body>
+<main role="main">
+    <section class="home-page-top-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a ui-sref="locations">Pokemon</a></li>
+                    <li><a ui-sref="packages">Starters</a></li>
+                    <li><a ui-sref="home"><img src="./img/pokeball.svg" alt="Pokemon Logo"></a></li>
+                    <li><a ui-sref="home">About</a></li>
+                    <li><a ui-sref="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="intro-text" ng-style="{'color':'blue'}">Be the very best!!</h1>
+    </section>
+    <section class="bottom-page-container">
+      <footer>
+
+      </footer>
+
+    </section>
+
+
+
+
+    <ui-view></ui-view>
+
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/controllers/caughtCtrl.js" charset="utf-8"></script>
+<script src="./js/controllers/locationsCtrl.js" charset="utf-8"></script>
+<script src="./js/controllers/packagesCtrl.js" charset="utf-8"></script>
+<script src="./js/services/mainService.js" charset="utf-8"></script>
+
+
+
+
+</body>
+</html>

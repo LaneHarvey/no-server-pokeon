@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<section class="packages-main">
+    <section class="package-card" ng-repeat="package in vm.packages">
+        <img  src="{{package.image}}">
+        <h6> {{package.pokemon}} </h6>
+        <button  class="types" ui-sref="types"><h1>{{package.type}}</h1></button>
+
+        <button ui-sref="caught({id: package.id})">Choose your starter</button>
+    </section>
+</section>

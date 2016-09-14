@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<section class="locations-container">
+    <!-- This is where we need to repeat over our data that we are getting from our controller. The controller is getting the data from the service
+     If you haven't made teh controller do that now and include it on your state object in app.js-->
+    <section class="location-card" ng-repeat="name in vm.names">
+        <div class="image-container">
+            <!-- Once we have the data we can use {{}} to bind that data to our view -->
+            <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
+            <img src="{{name.image}}" alt="">
+        </div>
+          <div ng-repeat="pokemon in pokemons.name">
+
+			        {{pokemon.name}}
+
+		      </div>
+        <div class="location-inner-right">
+
+            <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
+            is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
+            <button ui-sref="stats">Stats</button>
+        </div>
+    </section>
+</section>

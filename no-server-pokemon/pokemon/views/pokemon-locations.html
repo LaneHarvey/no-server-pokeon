@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<section class="locations-container">
+    <section class="location-card" ng-repeat="location in vm.locations">
+        <div class="image-container">
+            <img src="{{location.image}}" alt="">
+        </div>
+        <div class="location-inner-left">
+            <h6> {{location.pokemon}} </h6>
+            <h1>{{location.type}} </h1>
+            <h1>{{location.id}} </h1>
+        </div>
+        <div class="location-inner-right">
+            <button ui-sref="caught({id: location.id})">Choose your starter</button>
+        </div>
+    </section>
+</section>
